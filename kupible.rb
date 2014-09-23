@@ -2,8 +2,8 @@ require 'formula'
 
 class Kupible < Formula
   homepage 'http://www.ansibleworks.com/'
-  url 'https://github.com/kupishkis/ansible/archive/v1.7.1.tar.gz'
-  sha1 '7788dd1660d59b6e3ba989eeae49822d97057eb3'
+  url 'https://github.com/kupishkis/ansible/archive/v1.8.0.tar.gz'
+  sha1 'c74f7b3be14d9c9247c98749b792c061dda06d5a'
 
   head 'https://github.com/kupishkis/ansible.git', :branch => 'devel'
 
@@ -74,6 +74,6 @@ class Kupible < Formula
   end
 
   test do
-    system "#{bin}/ansible", "--version"
+    system "#{bin}/kupible", "--version"
   end
 end
