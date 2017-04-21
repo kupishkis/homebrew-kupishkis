@@ -2,7 +2,7 @@ class Vssh < Formula
   desc "vault ssh wrapper"
   homepage "https://github.com/kupishkis/vssh"
   url "https://github.com/kupishkis/vssh/archive/v0.1.tar.gz"
-  sha1 "30689ce9f6eb295224db04d8d2aa2e1efb5d9851"
+  sha256 "85cd342048badbbe60f553b2398e5455d7d65e6d98629f94239c95427ccbcf8e"
 
   depends_on "vault"
 
