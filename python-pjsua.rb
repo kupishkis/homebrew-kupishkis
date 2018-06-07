@@ -14,6 +14,6 @@ class PythonPjsua < Formula
         system "make", "dep"
         system "make"
         cd "pjsip-apps/src/python"
-        system "python2", "setup.py", "install"
+        system "python2", "setup.py", "install", "--user"
     end
 end
