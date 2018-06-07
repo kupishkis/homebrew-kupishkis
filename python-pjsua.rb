@@ -9,7 +9,7 @@ class PythonPjsua < Formula
     depends_on "python@2"
 
     def install
-        ENV.j1
+        ENV.deparallelize
         system "./configure", "--prefix=#{prefix}"
         system "make", "dep"
         system "make"
