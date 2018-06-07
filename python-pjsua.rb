@@ -1,9 +1,10 @@
 require 'formula'
 
 class PythonPjsua < Formula
-    version "2.7.2"
+    desc 'PJSIP multimedia communication library implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE'
     homepage 'http://www.pjsip.org'
-    head 'http://svn.pjsip.org/repos/pjproject/trunk'
+    url 'http://www.pjsip.org/release/2.7.2/pjproject-2.7.2.tar.bz2'
+    sha256 '9c2c828abab7626edf18e04b041ef274bfaa86f99adf2c25ff56f1509e813772'
 
     depends_on "python@2"
 
