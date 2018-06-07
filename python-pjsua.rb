@@ -1,7 +1,7 @@
 require 'formula'
 
 class PythonPjsua < Formula
-    version "0.1.0"
+    version "2.7.2"
     homepage 'http://www.pjsip.org'
     head 'http://svn.pjsip.org/repos/pjproject/trunk'
 
@@ -13,6 +13,6 @@ class PythonPjsua < Formula
         system "make", "dep"
         system "make"
         cd "pjsip-apps/src/python"
-        system "python", "setup.py", "install"
+        system "python2", "setup.py", "install"
     end
 end
