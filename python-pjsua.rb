@@ -5,7 +5,7 @@ class PythonPjsua < Formula
     homepage 'http://www.pjsip.org'
     head 'http://svn.pjsip.org/repos/pjproject/trunk'
 
-    depends_on :python
+    depends_on "python@2"
 
     def install
         ENV.j1
