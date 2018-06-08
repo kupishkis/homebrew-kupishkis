@@ -14,6 +14,10 @@ class PythonPjsua < Formula
         system "make", "dep"
         system "make"
         cd "pjsip-apps/src/python"
-        system "python2", "setup.py", "install", "--user"
+        system "python", *Language::Python.setup_install_args(prefix)
+    end
+
+    test do
+      system "python", "-c", "import pjsua; print(pjsua.__package__)"
     end
 end
